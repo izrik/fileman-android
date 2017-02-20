@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (pwd == null || pwd == "") pwd = "/";
 
+        String title = "FileMan";
+        String newTitle = title + " - " + pwd;
+        setTitle(newTitle);
+
         File f = new File(pwd);
         final File[] files = f.listFiles();
 
